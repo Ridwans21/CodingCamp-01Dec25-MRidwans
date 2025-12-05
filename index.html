@@ -4,91 +4,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Yama Roni</title>
+    <title>Portfolio Muhammad Ridwan Setiawan</title>
 
     <!-- CSS External -->
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome CDN untuk icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-
     <!-- Header -->
-    <header class="main-header p-[8px]">
+    <header class="main-header flex items-center justify-between p-2 bg-purple-900 sticky top-0 z-50">
         <!-- Logo -->
-        <div class="logo"></div>
+        <div class="flex items-center gap-7">
+            <div class="logo"></div>
+            <p class="text-white text-3xl font-bold">ENTERGALACTIC</p>
+        </div>
 
         <!-- Navigation Bar -->
-        <nav class="flex">
-            <a class="border p-[4px]" href="#home-page">Home</a>
-            <a class="border p-[4px]" href="#our-profile-page">Our Profile</a>
-            <a class="border p-[4px]" href="#portfolio-page">Portfolio</a>
-            <a class="border p-[4px]" href="#message-us-page">Message Us</a>
+        <nav class="flex gap-6">
+            <a href="#home-page" class="text-white font-medium hover:text-pink-500 transition">Home</a>
+            <a href="#portfolio-page" class="text-white font-medium hover:text-pink-500 transition">Album</a>
+            <a href="#our-profile-page" class="text-white font-medium hover:text-pink-500 transition">About</a>
+            <a href="#message-us-page" class="text-white font-medium hover:text-pink-500 transition">Message Us</a>
         </nav>
     </header>
 
-    <hr />
-
     <!-- Main -->
     <main>
-
         <!-- Home Page -->
-        <section id="home-page" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold" id="welcome-speech">Welcome to Our Website</h2>
-            <p class="mt-2">We are glad to have you here. Explore our services and offerings.</p>
+        <section id="home-page" class="min-h-[500px] text-center flex flex-col justify-center items-center">
+            <h2 class="text-2xl font-bold" id="welcome-speech"></h2>
+            <p class="mt-2 text-gray-300">Welcome to Entergalactic!</p>
         </section>
 
-        <hr>
+        <!-- Portfolio Section 1 -->
+        <section id="portfolio-page" class="min-h-[500px] px-8 py-16 bg-gradient-to-br from-[#2d0066] to-[#8c00ff] text-white">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-stretch gap-12">
+                <!-- Left Text -->
+                <div class="md:w-1/2 text-center md:text-left flex flex-col justify-center">
+                    <h2 class="text-3xl font-bold mb-4 mt-80">Who is Kid Cudi?</h2>
+                    <p class="mb-6 text-justify">
+                        Kid Cudi, whose real name is Scott Ramon Seguro Mescudi, is a versatile artist from Cleveland, Ohio,
+                        known as a rapper, singer, songwriter, record producer, and actor. He rose to fame in the late 2000s
+                        with his groundbreaking mixtape A Kid Named Cudi and the international hit "Day 'n' Nite," which led
+                        to his rise to critical and commercial acclaim with his debut album, Man on the Moon: The End of Day.
+                        His music is highly regarded for blending elements of hip hop with alternative sounds and psychedelia,
+                        and he is known for his honest and introspective lyrics that address issues such as depression, anxiety,
+                        and mental health, making him a highly influential figure in modern music.
+                    </p>
+                    <p class="mb-6 text-justify">
+                        Beyond music, Kid Cudi's impact on the music industry is significant, as he has inspired a new generation
+                        of artists and continues to push boundaries with his innovative approach to music and art.
+                    </p>
+                </div>
 
-        <!-- Our Profile Page -->
-        <section id="our-profile-page" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold">About Yama Company</h2>
-            <p class="mt-2">Yama Company is dedicated to providing top-notch services in various domains.</p>
+                <!-- Right Card / Photo -->
+                <div class="md:w-1/2 flex flex-col gap-6 mt-80">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer flex-1">
+                        <img src="https://www.billboard.com/wp-content/uploads/2025/08/kid-cudi-happy-gilmore-2-2025-billboard-1800.jpg?w=942&h=628&crop=1"
+                            alt="Album Cover" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <hr>
+        <!-- Portfolio Section 2 -->
+        <section id="portfolio-page-2" class="min-h-[500px] px-8 py-16 bg-gradient-to-br from-[#4c00a0] to-[#a64cff] text-white">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-12">
+                <!-- Left Card / Photo -->
+                <div class="md:w-1/2 flex flex-col gap-6 mt-85">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer aspect-[4/3]">
+                        <img src="https://m.media-amazon.com/images/I/71VqPXbxFbL._UF1000,1000_QL80_.jpg"
+                            alt="Album Cover" class="w-full h-full object-cover">
+                    </div>
+                </div>
 
-        <!-- Portfolio Page -->
-        <section id="portfolio-page" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold">Our Portfolio</h2>
-            <p class="mt-2">Take a look at our diverse range of projects that showcase our skills and expertise.</p>
+                <!-- Right Text -->
+                <div class="md:w-1/2 text-center md:text-left flex flex-col justify-center">
+                    <h2 class="text-3xl font-bold mb-4 mt-85">Scott Mescudi’s Other Works</h2>
+                    <p class="mb-6 text-justify">
+                        Kid Cudi's best-selling album, and widely considered his most legendary work, is his 2009 debut,
+                        Man on the Moon: The End of Day, which has sold over four million units in the United States,
+                        fueled by the popularity of its iconic singles "Day 'n' Nite" and "Pursuit of Happiness."
+                        The album is highly influential for its pioneering blend of hip hop with psychedelia and alternative rock,
+                        and has earned legendary status for Kid Cudi's candid discussion of personal issues such as depression,
+                        anxiety, and isolation, making it a fundamental work that shaped the direction of modern alternative hip hop.
+                    </p>
+                    <p class="mb-70 text-justify">
+                        In addition to his solo work, Kid Cudi has collaborated with numerous artists across various genres,
+                        contributing to hit songs such as "Erase Me" with Kanye West and "Make Her Say" with Pharrell Williams.
+                        He has also ventured into acting, appearing in films like "Need for Speed" and TV shows such as
+                        "How to Make It in America," showcasing his versatility as an artist.
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <hr>
+        <!-- Carousel Section -->
+        <section class="carousel-section text-center">
+            <h2 class="text-3xl font-bold mb-4 mt-20">Kid Cudi's Album</h2>
+            <p class="max-w-3xl mx-auto mb-7">
+                Here is a list of albums from Kid Cudi from when he first started out as a hip-hop singer until now
+                he has become a very influential person in the world of music.
+            </p>
+
+            <section class="carousel">
+                <div class="slides">
+                    <img src="https://i.scdn.co/image/ab67616d0000b27314b68a029c1676faee9a4d43" alt="Foto 1" class="active">
+                    <img src="https://m.media-amazon.com/images/I/81OPlzQ2cwL._UF1000,1000_QL80_.jpg" alt="Foto 2" class="active">
+                    <img src="https://media.pitchfork.com/photos/5929a060ea9e61561daa4562/1:1/w_450%2Cc_limit/48d3e548.jpeg" alt="Foto 3">
+                    <img src="https://media.pitchfork.com/photos/5929b293c0084474cd0c1fb9/1:1/w_450%2Cc_limit/e6de59a6.png" alt="Foto 4">
+                    <img src="https://shop.kidcudi.com/cdn/shop/files/Passion_Pain_DemonSlayin_2CD.png?v=1701107954" alt="Foto 5" class="active">
+                    <img src="https://media.pitchfork.com/photos/6578c4d91444c66b261311e2/master/w_1280%2Cc_limit/Kids-See-Ghosts-Kanye-West-Kid-Cudi.jpg" alt="Foto 6" class="active">
+                    <img src="https://media.pitchfork.com/photos/5fd1137268b85efd391b5a45/master/pass/Kid-Cudi.jpg" alt="Foto 7" class="active">
+                    <img src="https://m.media-amazon.com/images/I/91ZnlAZKQJL._UF1000,1000_QL80_.jpg" alt="Foto 8" class="active">
+                    <img src="https://m.media-amazon.com/images/I/91xQz5iPNmL._UF1000,1000_QL80_.jpg" alt="Foto 9" class="active">
+                    <img src="https://media.pitchfork.com/photos/659ecd1ba6290d398557da8f/master/pass/Kid-Cudi-Insano.jpg" alt="Foto 10" class="active">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2732262b6b2b43a32ffa0705190" alt="Foto 11" class="active">
+                    <img src="https://i.scdn.co/image/ab67616d0000b27381ca213ab5e53fee61517fdf" alt="Foto 12" class="active">
+                </div>
+            </section>
+        </section>
+
+        <!-- About Page -->
+        <section id="our-profile-page" class="min-h-[500px] flex flex-col justify-center items-center text-center px-8 bg-gradient-to-br from-[#210055] to-[#5a00aa] text-white">
+            <h2 class="text-3xl font-bold mb-7 mt-95">About Entergalactic</h2>
+            <p class="max-w-3xl mb-7">
+                Entergalactic is a project focused on showcasing information about hip-hop singer Kid Cudi and also serves as a portfolio for an assignment given by RevoU Team. 
+                The website was built on December 5 2025 using HTML, Tailwind CSS, and JavaScript.
+            </p>
+            <p class="max-w-3xl mb-15">
+                This project is a place for me to practice basic programming languages ​​to dive deeper into the world of Software Engineering, especially Front-End Developer.
+                This project is built using HTML, CSS, and JavaScript, with styling enhanced by Tailwind CSS to create a modern and responsive design.
+            </p>
+
+            <!-- Highlights -->
+            <div class="skill-slider">
+                <div class="skill-track">
+                    <span class="skill">Software Engineer</span>
+                    <span class="skill">Front-End Development</span>
+                    <span class="skill">UI/UX Design</span>
+                    <span class="skill">Interactive Web</span>
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">Tailwind CSS</span>
+                </div>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="flex justify-center gap-6 mb-150 mt-17">
+                <a href="https://www.linkedin.com/in/muhammadridwansetiawan/" target="_blank" class="text-white text-3xl hover:text-blue-400">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Ridwans21" target="_blank" class="text-white text-3xl hover:text-gray-400">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
 
         <!-- Message Us Page -->
         <section id="message-us-page" class="min-h-[500px] mx-8">
-            <header>
-                <h2 class="text-xl font-bold">Message Us</h2>
-                <p class="mt-2">Have questions or want to work with us? Send us a message and we'll get back to you
-                    promptly.</p>
+            <header class="text-center w-full mb-6">
+                <h2 class="text-2xl font-bold">Message Us</h2>
+                <p class="mt-2 text-[#e0d6ff]">Have questions or feedback? Send us a message and we'll get back to you as soon as possible.</p>
             </header>
 
-            <form>
-                <div class="mb-4">
+            <form class="max-w-2xl mx-auto bg-white/10 p-8 rounded-lg backdrop-blur-md flex flex-col gap-4">
+                <div>
                     <label class="block mb-2" for="name">Name:</label>
-                    <input class="w-full p-2 border rounded" type="text" id="name" name="name" required />
+                    <input class="w-full p-2 rounded border border-white/30 bg-white/5 text-white placeholder-white/70" type="text" id="name" name="name" placeholder="Your name" required />
                 </div>
-                <div class="mb-4">
+                <div>
                     <label class="block mb-2" for="email">Email:</label>
-                    <input class="w-full p-2 border rounded" type="email" id="email" name="email" required />
+                    <input class="w-full p-2 rounded border border-white/30 bg-white/5 text-white placeholder-white/70" type="email" id="email" name="email" placeholder="Your email" required />
                 </div>
-                <div class="mb-4">
+                <div>
                     <label class="block mb-2" for="message">Message:</label>
-                    <textarea class="w-full p-2 border rounded" id="message" name="message" rows="5"
-                        required></textarea>
+                    <textarea class="w-full p-2 rounded border border-white/30 bg-white/5 text-white placeholder-white/70" id="message" name="message" rows="5" placeholder="Your message" required></textarea>
                 </div>
-                <button class="px-4 py-2 bg-blue-500 text-white rounded" type="button">Send Message</button>
+                <button class="px-4 py-2 bg-purple-600 hover:bg-purple-800 text-white rounded-lg transition" type="button">Send Message</button>
             </form>
         </section>
-
     </main>
 
     <!-- Footer -->
-    <footer>
-        <p class="text-center p-4">© 2025 Ridwan</p>
+    <footer class="bg-[#200053] text-white text-center py-4">
+        <p>© 2025 Entergalactic</p>
     </footer>
 
     <!-- JS External -->

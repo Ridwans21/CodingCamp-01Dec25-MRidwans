@@ -1,14 +1,181 @@
+/* ===== Body dengan gradasi smooth ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #eaeaea;
+    background: linear-gradient(to bottom, #1a0640, #30006b, #4c00a0, #8c00ff);
+    background-attachment: fixed;
+    transition: background 0.5s ease;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* ===== Logo ===== */
 .logo {
     height: 75px;
     width: 75px;
-    background-color: lightgrey;
     border-radius: 50%;
-    background-image: url(https://picsum.photos/200);
+    background-image: url(https://preview.redd.it/0v8berd0jz561.png?width=640&crop=smart&auto=webp&s=1855a683b0480abb0ea20d6ca1456b8067b2f0cd);
     background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.logo:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(107, 0, 194, 0.7);
+}
+
+/* ===== Header / Navbar ===== */
 .main-header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 12px 24px;
+    background: rgba(32, 0, 83, 0.9);
+    box-shadow: 0 6px 18px rgba(107, 0, 194, 0.884);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    margin: 0;
+    border-radius: 0;
+}
+
+/* Navbar link */
+.main-header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 25px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.main-header nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #3600fa, #b673c7);
+    transition: width 0.3s ease;
+}
+
+.main-header nav a:hover::after {
+    width: 100%;
+}
+
+.main-header nav a:hover {
+    transform: translateY(-2px);
+    color: #f70098;
+    text-shadow: 0 0 6px #cc00ff46, 0 0 12px #3600fa;
+}
+
+/* ===== Sections Transparan ===== */
+section {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    padding: 40px 24px;
+    box-sizing: border-box;
+}
+
+/* ===== Footer ===== */
+footer {
+    background: rgba(32, 0, 83, 0.9);
+    color: #ffffff;
+    text-align: center;
+    padding: 16px 0;
+}
+
+/* ===== Form di Message Us ===== */
+#message-us-page form,
+#message-us-page input,
+#message-us-page textarea,
+#message-us-page button {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#message-us-page form {
+    width: 100%;
+    max-width: 800px;
+    background: rgba(134, 56, 3, 0.068);
+    padding: 50px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ===== Skill Slider ===== */
+.skill-slider {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.skill-track {
+    display: flex;
+    gap: 20px;
+    animation: scrollSkills 5s linear infinite;
+}
+
+.skill {
+    flex-shrink: 0;
+    padding: 8px 16px;
+    background: #6a00e4;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+}
+
+@keyframes scrollSkills {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* ===== Carousel ===== */
+.carousel {
+    width: 90%;
+    max-width: 800px;
+    aspect-ratio: 3/2;
+    overflow: hidden;
+    margin: 40px auto;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.slides img.active {
+    opacity: 1;
+    position: relative;
 }
